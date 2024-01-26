@@ -52,7 +52,9 @@ function Intro() {
           <span className="idx-txt">ATTENTION</span>
           <h3 className="main-title">Introducing this year's movie</h3>
           <p className="txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium animi doloremque perferendis. Reprehenderit consequuntur maiores ut nostrum velit odio autem quos placeat, itaque quaerat? Ipsam et rem molestiae vel consectetur.</p>
-          <button type="button" className="main-link-btn">MOVE TO MAIN!</button>
+          <button type="button" className="main-link-btn">
+            <Link to=""> MOVE TO MAIN!</Link>
+          </button>
         </div>
       </main>
     </div>

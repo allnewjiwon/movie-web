@@ -60,6 +60,11 @@
     padding: 10px 120px;
     font-weight: bold;
     font-size: 14px;
+    transition: .2s all linear;
+    &:hover{
+      background: var(--white);
+      color: var(--black);
+    }
   }
 }
 
