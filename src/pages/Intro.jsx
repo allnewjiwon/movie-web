@@ -8,6 +8,8 @@ import 'swiper/css/pagination';
 import 'swiper/css/effect-fade';
 import 'swiper/css/autoplay';
 
+import { Routes, Route, Outlet, Link } from 'react-router-dom'  
+import Main from './Main.jsx';
 import '../scss/main.scss';
 
 // const imagePaths = [
@@ -52,9 +54,11 @@ function Intro() {
           <span className="idx-txt">ATTENTION</span>
           <h3 className="main-title">Introducing this year's movie</h3>
           <p className="txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium animi doloremque perferendis. Reprehenderit consequuntur maiores ut nostrum velit odio autem quos placeat, itaque quaerat? Ipsam et rem molestiae vel consectetur.</p>
-          <button type="button" className="main-link-btn">
-            MOVE TO MAIN!
-          </button>
+          <Link to="/Main">
+            <button type="button" className="main-link-btn">
+              MOVE TO MAIN!
+            </button>
+          </Link>
         </div>
       </main>
     </div>

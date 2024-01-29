@@ -7,16 +7,19 @@
 import React from 'react';
 import {Routes, Route, Link, Outlet} from 'react-router-dom';
 import axios from 'axios';
-import MyComponenet from './pages/Main';
+import Main from './pages/Main';
 import Intro from './pages/Intro';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      {/* <MyComponenet /> */}
-      <Intro />
+      <Routes>
+      <Route path="/" element={<Intro />}></Route>
+        <Route path="/Main" element={<Main />}></Route>
+      </Routes>
     </div>
+
   );
 }
 
