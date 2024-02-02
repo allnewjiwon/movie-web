@@ -20,7 +20,7 @@ function App() {
         <Route path="/" element={<Intro />}></Route>
         <Route path="/Main" element={<Main />}></Route>
       </Routes>
-      <Genre />
+      {/* <Genre /> */}
     </div>
   );
 }
