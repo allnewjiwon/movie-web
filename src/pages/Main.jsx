@@ -43,7 +43,7 @@ function Main() {
   return (
     <div>
       <header id="header">
-        <h1 className="logo">JJ PROJECT</h1>
+        <h1 className="logo">JJ&nbsp;PROJECT</h1>
         {/* 24.02.02 comment by jiwon 각 네비게이션들은 추후 Link태그 사용해서 라우팅 할 것 */}
         <nav className="gnb">
           <span className="link-home">Home</span>
