@@ -6,7 +6,7 @@ img, picture, video, canvas, svg {display: block;max-width:100%;}
 button {background:none;border:0;cursor:pointer;}
 a {text-decoration:none}
 table {border-collapse:collapse;border-spacing:0}
-ul{list-style: none;}
+li{list-style: none;}
 
 :root{
   --white: #fff;
@@ -16,7 +16,7 @@ ul{list-style: none;}
 body{
   font-size: 16px;
   color: #000;
-  font-family: 'Inter';
+  font-family: 'Inter', 'Pretendard', Arial, Helvetica, sans-serif;
   line-height: 1.4;
   overflow-x: hidden;
 }

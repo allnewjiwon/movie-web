@@ -1,3 +1,5 @@
+/** inter ENGLISH **/
+
 @font-face {
   font-family: 'Inter';
   src: url(../../assets/fonts/Inter-Black.woff)format('woff');
@@ -41,5 +43,53 @@
 @font-face {
   font-family: 'Inter';
   src: url(../../assets/fonts/Inter-Thin.woff)format('woff');
+  font-weight: 100;
+}
+
+/** pretendard KOREAN**/
+
+@font-face {
+  font-family: 'Pretendard';
+  src: url('../../assets/fonts/Pretendard-Black.woff2')format('woff2');
+  font-weight: 900;
+}
+@font-face {
+  font-family: 'Pretendard';
+  src: url('../../assets/fonts/Pretendard-Bold.woff2')format('woff2');
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'Pretendard';
+  src: url('../../assets/fonts/Pretendard-ExtraBold.woff2')format('woff2');
+  font-weight: 800;
+}
+@font-face {
+  font-family: 'Pretendard';
+  src: url('../../assets/fonts/Inter-SemiBold.woff')format('woff2');
+  font-weight:700;
+}
+@font-face {
+  font-family: 'Pretendard';
+  src: url('../../assets/fonts/Pretendard-Regular.woff2')format('woff2');
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Pretendard';
+  src: url('../../assets/fonts/Pretendard-Medium.woff2')format('woff2');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Pretendard';
+  src: url('../../assets/fonts/Pretendard-Light.woff2')format('woff2');
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Pretendard';
+  src: url('../../assets/fonts/Pretendard-ExtraLight.woff2')format('woff2');
+  font-weight: 200;
+}
+@font-face {
+  font-family: 'Pretendard';
+  src: url('../../assets/fonts/Pretendard-Thin.woff2')format('woff2');
   font-weight: 100;
 }

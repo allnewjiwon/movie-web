@@ -1,20 +1,23 @@
 
-.wrap-modal{
+.modal__contents{
   background: var(--white);
   position: absolute;
   top: 50%;left: 50%;
   transform: translate(-50%, -50%);
-  transition: .2 linear all ease;
+  opacity: 0;
+  transition: opacity 1s ease;
 }
 
 .dim{
   position: fixed;
   top: 0;left: 0;
   right: 0;bottom: 0;
-  // visibility: hidden;
   background: rgba(0, 0, 0, 0.4);
-  transition: .2 linear all ease;
+  transition: opacity 1s ease;
 }
-.dim.show{
-  visibility: visible;
+
+.modal__contents.visible, .dim.visible{
+  opacity: 1;
+  transition: opacity 1s ease;
 }
+

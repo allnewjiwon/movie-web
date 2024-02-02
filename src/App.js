@@ -9,6 +9,7 @@ import { Routes, Route, Link, Outlet } from "react-router-dom";
 import axios from "axios";
 import Main from "./pages/Main";
 import Intro from "./pages/Intro";
+import Movie from "./pages/Movie";
 import "./App.css";
 
 function App() {
