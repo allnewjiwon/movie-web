@@ -20,7 +20,6 @@ function Modal ({
   //   }
   // },[poster_path])
 
-
   useEffect(() => {
     setVisible(true);
   }, [visible])
@@ -28,7 +27,7 @@ function Modal ({
   // 2. 배경 딤처리
   // 3. 모달창 내부 x 클릭 시 모달창 닫히고 배경 딤처리 없어져야 됨
   
-   console.log(visible)
+  console.log(visible)
   return(
     <div>
       <div className="presentation" role="presentation">

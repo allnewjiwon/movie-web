@@ -50,7 +50,7 @@ function Main() {
           <div className="search-area">
           <form className="search-form">
             <input type="text" placeholder="search" />
-            <button className="search-btn">Search</button>
+            <button className="search-btn" >Search</button>
           </form>
           </div>
           <span className="link-contact">Contact</span>
