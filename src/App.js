@@ -11,6 +11,7 @@ import Main from "./pages/Main";
 import Intro from "./pages/Intro";
 import Movie from "./pages/Movie";
 import "./App.css";
+import Genre from "./components/Genre";
 
 function App() {
   return (
