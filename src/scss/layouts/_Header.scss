@@ -1,0 +1,47 @@
+#header{
+  width: 100%;
+  display: flex;
+  padding: 20px 50px;
+  align-items: center;
+  background: var(--black);
+  color: var(--white);
+  justify-content: space-between;
+  .logo{
+    font-size: 24px;
+    font-weight: 900;
+    transition: .3s all ease;
+    margin-right: 150px;
+    &:hover{
+      border-radius: 50px;
+      background: var(--black);
+      color: var(--white);
+    }
+  }
+}
+
+.gnb{
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+  .search-form{
+    margin: 0px 20px 0px 30px;
+    display: flex;
+    align-items: center;
+    input{
+      margin-right: 10px;
+      width: 400px;
+    }
+    .search-btn{
+      border: 1px solid var(--white);
+      border-radius: 20px;
+      padding: 4px;
+      font-size: 10px;
+      background: var(--white);
+      color: var(--black);
+    }
+  }
+  .link-contact{
+    margin-right: 30px;
+  }
+}
