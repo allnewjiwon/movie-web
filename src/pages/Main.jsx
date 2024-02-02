@@ -40,13 +40,13 @@ function Main() {
       ) : (
         <div className="movies">
           {movies.results.map((movie) => (
-            <li key={movie.id}>
-              <img src={`${IMAGE_BASE_URL}${movie.backdrop_path}`} />
-              <p>realse date : {movie.release_date}</p>
-              <p>title : {movie.title}</p>
-              <p>summary : {movie.overview}</p>
-              <p>genre : {movie.genre_ids}</p>
-            </li>
+            <ul key={movie.id}>
+              <img src={`${IMAGE_BASE_URL}${movie.poster_path}`} />
+              {/* <p>realse date : {movie.release_date}</p> */}
+              <p>{movie.title}</p>
+              {/* <p>summary : {movie.overview}</p>
+              <p>genre : {movie.genre_ids}</p> */}
+            </ul>
           ))}
         </div>
       )}
