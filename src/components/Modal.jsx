@@ -18,13 +18,18 @@ function Modal({
   //     setVisible(true);
   //   }
   // },[poster_path])
+  //
+  const getVisible = () => {
+    setVisible((visible) => !visible);
+  };
 
   useEffect(() => {
-    setVisible(true);
-  }, [visible]);
+    getVisible();
+  }, []);
   // 1. 포스터 썸네일 클릭 시 해당 모달창 뜨고
   // 2. 배경 딤처리
   // 3. 모달창 내부 x 클릭 시 모달창 닫히고 배경 딤처리 없어져야 됨
+  // modal_contents
 
   console.log(visible);
   return (
@@ -32,7 +37,7 @@ function Modal({
       <div className="presentation" role="presentation">
         <div className="dim" onClick={modalClose}></div>
         <div className="modal">
-          <div className={`modal__contents ${visible ? "visible" : ""}`}>
+          <div className={`modal__contents ${visible ? "visible" : null}`}>
             <img
               src={`${image_base_url}${poster_path}`}
               className="modal__poster-img"

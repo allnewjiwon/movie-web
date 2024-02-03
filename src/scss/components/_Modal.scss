@@ -1,23 +1,25 @@
-
-.modal__contents{
+.modal__contents {
   background: var(--white);
   position: absolute;
-  top: 50%;left: 50%;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
   opacity: 0;
   transition: opacity 1s ease;
 }
 
-.dim{
+.dim {
   position: fixed;
-  top: 0;left: 0;
-  right: 0;bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background: rgba(0, 0, 0, 0.4);
   transition: opacity 1s ease;
 }
 
-.modal__contents.visible, .dim.visible{
+.modal__contents.visible,
+.dim.visible {
   opacity: 1;
   transition: opacity 1s ease;
 }
-
