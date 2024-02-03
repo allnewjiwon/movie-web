@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 function Genre() {
   const API_KEY = "9d5002da74fa822995bfbbc6f6cb3955";
-  const [genres, setGenres] = useState("");
+  const [genres, setGenres] = useState("hello");
 
   const getGenres = async () => {
     const response = await fetch(
@@ -12,15 +12,19 @@ function Genre() {
     setGenres(json);
   };
 
-  useEffect(() => getGenres, []);
+  useEffect(() => {
+    getGenres();
+  }, []);
+
+  console.log(genres);
 
   return (
     <div>
-      {genres.genres.map((genre) => (
+      {genres.genres.map((genre) => {
         <div>
           {genre.id} : {genre.name}
-        </div>
-      ))}
+        </div>;
+      })}
     </div>
   );
 }
