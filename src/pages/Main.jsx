@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import Header from "../components/Header";
 import MovieList from "../components/MovieList";
 
-
 function Main() {
   const API_KEY = "9d5002da74fa822995bfbbc6f6cb3955";
   const [loading, setLoading] = useState(true);
