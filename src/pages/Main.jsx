@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import GNB from "../components/GNB";
+import Header from "../components/Header";
 import MovieList from "../components/MovieList";
 
 function Main() {
@@ -22,7 +22,7 @@ function Main() {
 
   return (
     <div>
-      <GNB />
+      <Header />
 
       {loading ? (
         <h1>loading...</h1>
