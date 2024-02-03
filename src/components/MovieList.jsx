@@ -1,13 +1,16 @@
 import PropTypes from "prop-types";
+import Modal from "./Modal";
 
-function MovieList({ key, coverImg, title, summary, genre }) {
+function MovieList({ key, coverImg, title, genre, modalOpen}) {
   const IMAGE_BASE_URL = "https://image.tmdb.org/t/p/original";
+  
   return (
     <div>
-      <img src={`${IMAGE_BASE_URL}${coverImg}`} alt={title} />
-      <h2>{title}</h2>
-      <p>{summary}</p>
-      <p>{genre}</p>
+      <div className="movie-list"> 
+        {coverImg && (<img src={`${IMAGE_BASE_URL}${coverImg}`} alt={title} />)}
+        <h2>{title}</h2>
+        <p>{genre}</p>
+      </div>
     </div>
   );
 }
