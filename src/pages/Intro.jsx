@@ -21,7 +21,6 @@ import '../scss/main.scss';
 function Intro() {
   return (
     <div>
-      <main className="container">
         <Swiper
           modules = {[Navigation, Pagination, EffectFade, Autoplay
           ]}
@@ -60,7 +59,6 @@ function Intro() {
             </button>
           </Link>
         </div>
-      </main>
     </div>
   );
 }

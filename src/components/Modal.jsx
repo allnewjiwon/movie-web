@@ -37,11 +37,14 @@ function Modal({
       <div className="presentation" role="presentation">
         <div className="dim" onClick={modalClose}></div>
         <div className="modal">
-          <div className={`modal__contents ${visible ? "visible" : null}`}>
-            <img
-              src={`${image_base_url}${poster_path}`}
-              className="modal__poster-img"
-            />
+
+          <div className={`modal__contents ${visible ? "visible" : ""}`}>
+            <div className="wrap-modal-poster">
+              <img
+                src={`${image_base_url}${poster_path}`}
+                className="modal__poster-img"
+              />
+            </div>
             <div className="modal__txt-info">
               <h2 className="modal__title">{title}</h2>
               <span className="modal__score">평점 : {score}</span>
@@ -50,7 +53,7 @@ function Modal({
               </span>
               <span className="modal__overview">줄거리 : {overview}</span>
             </div>
-            <span className="modal__steamed-heart">찜하기 기능(임의)</span>
+            {/* <span className="modal__steamed-heart">찜하기 기능(임의)</span> */}
             <button onClick={modalClose} className="close-modal">
               x
             </button>

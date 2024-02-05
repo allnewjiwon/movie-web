@@ -26,18 +26,20 @@ function Main() {
       {loading ? (
         <h1>loading...</h1>
       ) : (
-        <div>
-          {movies.results.map((movie) => (
-            <MovieList
-              key={movie.id}
-              coverImg={movie.poster_path}
-              title={movie.title}
-              summary={movie.overview}
-              genre={movie.genre_ids}
-              movie={movie}
-            />
-          ))}
-        </div>
+        <main className="container">
+          <div className="movie__list-wrap">
+            {movies.results.map((movie) => (
+              <MovieList
+                key={movie.id}
+                coverImg={movie.poster_path}
+                title={movie.title}
+                summary={movie.overview}
+                genre={movie.genre_ids}
+                movie={movie}
+              />
+            ))}
+          </div>
+        </main>
       )}
     </div>
   );
