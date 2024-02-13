@@ -45,13 +45,15 @@ function Modal({
                 className="modal__poster-img"
               />
             </div>
-            <div className="modal__txt-info">
-              <h2 className="modal__title">{title}</h2>
-              <span className="modal__score">평점 : {score}</span>
-              <span className="modal__release-date">
-                개봉일자 : {release_date}
-              </span>
-              <span className="modal__overview">줄거리 : {overview}</span>
+            <div className="modal__wrap">
+              <div className="modal__txt-info">
+                <h2 className="modal__title">{title}</h2>
+                <span className="modal__score">평점 : {score}</span>
+                <span className="modal__release-date">
+                  개봉일자 : {release_date}
+                </span>
+                <span className="modal__overview">줄거리 : {overview}</span>
+              </div>
             </div>
             {/* <span className="modal__steamed-heart">찜하기 기능(임의)</span> */}
             <button onClick={modalClose} className="close-modal">
