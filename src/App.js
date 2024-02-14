@@ -9,9 +9,7 @@ import { Routes, Route, Link, Outlet } from "react-router-dom";
 import axios from "axios";
 import Main from "./pages/Main";
 import Intro from "./pages/Intro";
-import Movie from "./pages/Movie";
 import "./App.css";
-import Genre from "./components/Genre";
 
 function App() {
   return (
@@ -20,7 +18,6 @@ function App() {
         <Route path="/" element={<Intro />}></Route>
         <Route path="/Main" element={<Main />}></Route>
       </Routes>
-      <Genre />
     </div>
   );
 }

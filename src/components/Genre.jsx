@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
+import MovieList from "./MovieList";
 
+// 별도의 장르 api 가져오기
 function Genre() {
   const API_KEY = "9d5002da74fa822995bfbbc6f6cb3955";
   const [genres, setGenres] = useState([]);
@@ -19,9 +21,7 @@ function Genre() {
   return (
     <div>
       {genres.map((genre) => (
-        <div>
-          {genre.id} : {genre.name}
-        </div>
+        <MovieList key={genre.id} genreId={genre.id} genreName={genre.name} />
       ))}
     </div>
   );

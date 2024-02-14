@@ -15,16 +15,6 @@ function Header() {
         <span className="link-login">Login</span>
       </nav>
     </header>
-
-    // <div id="GNB">
-    //   <p>Home</p>
-    //   <form>
-    //     <input type="text" placeholder="search" />
-    //     <button>Search</button>
-    //   </form>
-    //   <p>Contact</p>
-    //   <p>Log in</p>
-    // </div>
   );
 }
 

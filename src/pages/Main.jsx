@@ -7,6 +7,7 @@ function Main() {
   const [loading, setLoading] = useState(true);
   const [movies, setMovies] = useState([]);
 
+  // api 영화 정보 불러내기
   const getMovies = async () => {
     const response = await fetch(
       `https://api.themoviedb.org/3/discover/movie?api_key=${API_KEY}`
